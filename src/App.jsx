@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home"
-import Community from "./pages/community"
 import Marketplace from "./pages/marketplace";
+import Dashboard from "./pages/dashboard";
+import Community from "./pages/community"
 import Header from "./components/header"
 
 export default function App() {
@@ -10,8 +11,9 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/community" element={<Community />} />
         <Route path="/store" element={<Marketplace />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/community" element={<Community />} />
       </Routes>
     </BrowserRouter>
   )
