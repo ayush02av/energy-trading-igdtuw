@@ -9,7 +9,7 @@ export default function Header() {
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <a
                             className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-                            href="#pablo"
+                            href="/"
                         >
                             Energy Trading Platform
                         </a>
@@ -18,7 +18,7 @@ export default function Header() {
                             type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}
                         >
-                            <i className="fas fa-bars"></i>
+                            <i className="fa fa-bars"></i>
                         </button>
                     </div>
                     <div
@@ -32,25 +32,25 @@ export default function Header() {
                             <li className="nav-item">
                                 <a
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="#pablo"
+                                    href="/store"
                                 >
-                                    <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Marketplace</span>
+                                    <i className="fa fa-shop text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Marketplace</span>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="#pablo"
+                                    href="/"
                                 >
-                                    <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Dashboard</span>
+                                    <i className="fa fa-dashboard text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Dashboard</span>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="#pablo"
+                                    href="/community"
                                 >
-                                    <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Community</span>
+                                    <i className="fa fa-users text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Community</span>
                                 </a>
                             </li>
                         </ul>
