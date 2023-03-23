@@ -47,14 +47,14 @@ export default function Header() {
                                     <i className="fa fa-dashboard text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Dashboard</span>
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                                     to="/community"
                                 >
                                     <i className="fa fa-users text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Community</span>
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <Wallet />
                             </li>
