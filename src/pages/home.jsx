@@ -11,8 +11,6 @@ export default function Home() {
             }}
         >
             Energy Trading
-            hello
-            <Marketplace/>
         </div>
     )
 }

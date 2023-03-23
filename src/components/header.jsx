@@ -1,4 +1,5 @@
 import React from "react";
+import Wallet from "./wallet";
 
 export default function Header() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -52,6 +53,9 @@ export default function Header() {
                                 >
                                     <i className="fa fa-users text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Community</span>
                                 </a>
+                            </li>
+                            <li className="nav-item">
+                                <Wallet />
                             </li>
                         </ul>
                     </div>
