@@ -3,6 +3,7 @@ import Home from "./pages/home"
 import Marketplace from "./pages/marketplace";
 import Dashboard from "./pages/dashboard";
 import Community from "./pages/community"
+import Marketplace from "./pages/marketplace";
 import Header from "./components/header"
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/store" element={<Marketplace />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/community" element={<Community />} />
+        <Route path="/store" element={<Marketplace />} />
       </Routes>
     </BrowserRouter>
   )

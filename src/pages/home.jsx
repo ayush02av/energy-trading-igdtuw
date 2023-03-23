@@ -1,3 +1,5 @@
+import Marketplace from '../pages/marketplace.jsx'
+
 export default function Home() {
     return (
         <div
@@ -9,6 +11,8 @@ export default function Home() {
             }}
         >
             Energy Trading
+            hello
+            <Marketplace/>
         </div>
     )
 }
