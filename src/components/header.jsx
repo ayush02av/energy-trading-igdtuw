@@ -40,7 +40,9 @@ export default function Header() {
                             <li className="nav-item">
                                 <a
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="/"
+
+
+                                    href="/dashboard"
                                 >
                                     <i className="fa fa-dashboard text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Dashboard</span>
                                 </a>
