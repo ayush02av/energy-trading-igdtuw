@@ -1,6 +1,6 @@
-import { useState, useMemo } from "react";
-import { clusterApiUrl } from "@solana/web3.js";
-import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
+import { useMemo } from "react"
+import { clusterApiUrl } from "@solana/web3.js"
+import { WalletAdapterNetwork } from "@solana/wallet-adapter-base"
 import {
    GlowWalletAdapter,
    LedgerWalletAdapter,
@@ -10,39 +10,33 @@ import {
    SolletExtensionWalletAdapter,
    SolletWalletAdapter,
    TorusWalletAdapter,
-} from "@solana/wallet-adapter-wallets";
+} from "@solana/wallet-adapter-wallets"
 import {
    ConnectionProvider,
    WalletProvider,
-} from "@solana/wallet-adapter-react";
-import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
+} from "@solana/wallet-adapter-react"
+import { WalletModalProvider } from "@solana/wallet-adapter-react-ui"
 //component imports here
-import "@solana/wallet-adapter-react-ui/styles.css";
+import "@solana/wallet-adapter-react-ui/styles.css"
 
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui"
+import { useConnection, useWallet } from "@solana/wallet-adapter-react"
 
 const ConnectButton = () => {
-   const { connection } = useConnection();
-   const { publicKey, sendTransaction } = useWallet();
-   console.log(connection, publicKey);
+   const { connection } = useConnection()
+   const { publicKey, sendTransaction } = useWallet()
+   console.log(connection, publicKey)
 
    return (
       <div>
          <WalletMultiButton />
-         {publicKey && (
-            <div>
-               <h2>Public key:</h2>
-               <p>{publicKey.toString()}</p>
-            </div>
-         )}
       </div>
-   );
+   )
 }
 
 export default function Wallet() {
-   const solNetwork = WalletAdapterNetwork.Devnet;
-   const endpoint = useMemo(() => clusterApiUrl(solNetwork), [solNetwork]);
+   const solNetwork = WalletAdapterNetwork.Devnet
+   const endpoint = useMemo(() => clusterApiUrl(solNetwork), [solNetwork])
    // initialise all the wallets you want to use
    const wallets = useMemo(
       () => [
@@ -56,7 +50,7 @@ export default function Wallet() {
          new SolletWalletAdapter(),
       ],
       [solNetwork]
-   );
+   )
 
    return (
       <ConnectionProvider endpoint={endpoint}>
@@ -66,5 +60,5 @@ export default function Wallet() {
             </WalletModalProvider>
          </WalletProvider>
       </ConnectionProvider>
-   );
+   )
 }
