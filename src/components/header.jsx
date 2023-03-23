@@ -1,18 +1,20 @@
-import React from "react";
+import React from "react"
+import Wallet from "./wallet"
+import { Link } from "react-router-dom"
 
 export default function Header() {
-    const [navbarOpen, setNavbarOpen] = React.useState(false);
+    const [navbarOpen, setNavbarOpen] = React.useState(false)
     return (
         <>
             <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-blue-400">
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                        <a
+                        <Link
                             className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-                            href="/"
+                            to="/"
                         >
                             Energy Trading Platform
-                        </a>
+                        </Link>
                         <button
                             className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                             type="button"
@@ -30,35 +32,36 @@ export default function Header() {
                     >
                         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="/store"
+                                    to="/store"
                                 >
                                     <i className="fa fa-shop text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Marketplace</span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-
-
-                                    href="/dashboard"
+                                    to="/dashboard"
                                 >
                                     <i className="fa fa-dashboard text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Dashboard</span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="/community"
+                                    to="/community"
                                 >
                                     <i className="fa fa-users text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Community</span>
-                                </a>
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Wallet />
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </>
-    );
+    )
 }

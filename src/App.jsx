@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/home"
 import Dashboard from "./pages/dashboard";
+import Marketplace from "./pages/marketplace"
 import Community from "./pages/community"
-import Marketplace from "./pages/marketplace";
 import Header from "./components/header"
 
 export default function App() {

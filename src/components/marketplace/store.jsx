@@ -18,8 +18,8 @@ const storeItems = [
 
 ]
 
-
 export default function Store() {
+
     return (
         <div>
             <div className="flex flex-wrap">
@@ -39,7 +39,6 @@ export default function Store() {
                             <div className="italic text-sm mt-5">By: {storeItem.by}</div>
                             <div className="float-left p-2">{storeItem.price} {storeItem.currency}/-</div>
                             <div className="float-right hover:bg-blue-500 hover:text-white rounded p-2 mx-2 cursor-pointer">Buy Now</div>
-                           
                             <div className="float-right hover:bg-blue-200 rounded p-2 mx-2 cursor-pointer">Add to Cart</div>
                         </div>
                     )

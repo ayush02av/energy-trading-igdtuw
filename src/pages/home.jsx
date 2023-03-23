@@ -23,8 +23,6 @@ export default function Home() {
                 fontWeight:"bold",
                 marginBottom:"40px"
              }}>Energy trading</h2>
-            
-
           <img src={Earth} alt="earth img" 
           style={{
             height:'650px',
@@ -32,6 +30,7 @@ export default function Home() {
             marginTop:"-100px",
             borderRadius:"50px"
           }}/>
+            Energy Trading
         </div>
     )
 }
