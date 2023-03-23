@@ -47,6 +47,7 @@ async function connectWallet(){
         const provider = new ethers.providers.Web3Provider(window.ethereum);
     }
 }
+
 export default function Store() {
     return (
         <div>
@@ -68,6 +69,7 @@ export default function Store() {
                             <div className="float-left p-2">{storeItem.price} {storeItem.currency}/-</div>
                             <div className="float-right hover:bg-blue-500 hover:text-white rounded p-2 mx-2 cursor-pointer" onClick={RequestAccount}>Buy Now</div>
                             <h3>wallet Address: {walletAddress}</h3>
+                            <div className="float-right hover:bg-blue-500 hover:text-white rounded p-2 mx-2 cursor-pointer">Buy Now</div>
                             <div className="float-right hover:bg-blue-200 rounded p-2 mx-2 cursor-pointer">Add to Cart</div>
                         </div>
                     )
